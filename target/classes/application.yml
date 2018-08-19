@@ -1,0 +1,15 @@
+server:
+  port: 8001 
+spring:
+  datasource:
+    hikari:
+      maximum-pool-size: 1000
+      connection-timeout: 20000 
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:8090/payment?verifyServerCertificate=false&useSSL=true
+    username: root 
+    password: manojtinku
+  jpa:
+    hibernate.ddl-auto: none
+    generate-ddl: true
+    show-sql: true
